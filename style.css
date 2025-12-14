@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+}
+
+
+/* Navbar */
+nav{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    font-weight: 200;
+    justify-content: space-between;
+    background: transparent;
+    user-select: none;
+    margin: auto;
+    padding: 1.7rem 0px;                   /*1 rem = 10px*/
+    color: white;
+}
+
+nav .element{
+    padding-bottom: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav .element a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+nav .right{
+    display: flex;
+}
+
+nav .right .element a{
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    padding: 0.8rem;
+    font-weight: 200;
+}
+
+/* Main */
+
+.top{
+    position: relative;
+    height: calc(100vh - 30rem);
+    min-height: 42rem;
+    max-height: 57rem;
+    margin-bottom: 4rem;
+}
+
+.image{
+    position: absolute;
+    z-index: -1;
+     min-height: 42rem;
+    max-height: 57rem;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+     height: calc(100vh - 30rem);
+}
+
+.top .center{
+    position: absolute;
+    bottom: calc(50%-11.1rem);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
